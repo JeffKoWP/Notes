@@ -3,12 +3,12 @@
  ## keyword: .saveAndClose()
  ### before create **body** 
       
-      #### fail when tempFileLetterPack.saveAndClose()
-      const body = DocumentApp.openById(tempFileLetterPack.getId()).getBody();
+// fail when tempFileLetterPack.saveAndClose()
+const body = DocumentApp.openById(tempFileLetterPack.getId()).getBody();
 
-      #### success when tempDocFile.saveAndClose()
-      tempDocFile = DocumentApp.openById(tempFileLetterPack.getId());
-      const body = tempDocFile.getBody();
+// success when tempDocFile.saveAndClose()
+tempDocFile = DocumentApp.openById(tempFileLetterPack.getId());
+const body = tempDocFile.getBody();
  
    for (let roomId in param){
       counter_rooms ++;
